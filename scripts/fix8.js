@@ -1,0 +1,1 @@
+const fs=require("fs");const p="C:/Users/Administrator/Desktop/play/gym-platform/frontend/src/components/ExerciseModal.jsx";let s=fs.readFileSync(p,"utf8");s=s.replace("`${exercise.name`", "`${exercise.name}");s=s.replace("`${exercise.name} demonstration`}", "`${exercise.name} demonstration`}");fs.writeFileSync(p,s);

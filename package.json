@@ -1,0 +1,14 @@
+{
+  "name": "gym-projects",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "gym-app",
+    "gym-platform/frontend"
+  ],
+  "scripts": {
+    "build:gym-app": "cd gym-app && npm run build",
+    "build:platform": "cd gym-platform/frontend && npm run build",
+    "build": "npm run build:gym-app && npm run build:platform"
+  }
+}
